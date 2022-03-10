@@ -1,17 +1,18 @@
-//サインアップ
+// サインアップ
 export interface SignUpParams {
   name: string
   email: string
   password: string
   passwordConfirmation: string
-};
-//サインイン
+}
+
+// サインイン
 export interface SignInParams {
   email: string
   password: string
 }
 
-//ユーザー
+// ユーザー
 export interface User {
   id: number
   uid: string
@@ -22,5 +23,5 @@ export interface User {
   image?: string
   allowPasswordChange: boolean
   created_at: Date
-  update_at: Date
+  updated_at: Date
 }
